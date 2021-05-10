@@ -8,7 +8,7 @@ public class NetworkService {
     private int serviceType;
 
     public NetworkService() {
-        this.serviceName = new String();
+        this.serviceName = "";
         this.serviceHost = null;
         this.servicePort = -1;
         this.serviceType = -1;
@@ -72,7 +72,7 @@ public class NetworkService {
 
     @Override
     public String toString() {
-        return ((serviceName != null) ? serviceName : "") + " " + serviceHost.toString() + ":" + String.valueOf(servicePort);
+        return ((serviceName != null) ? serviceName : "") + " " + serviceHost + ":" + servicePort;
     }
 
 }
